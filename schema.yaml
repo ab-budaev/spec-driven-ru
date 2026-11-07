@@ -1,4 +1,4 @@
-name: spec-driven-customized
+name: spec-driven-ru
 version: 1
 description: Кастомная схема OpenSpec на базе spec-driven (proposal → specs → design → tasks) с Gherkin-сценариями, приоритетами P0/P1/P2 и двуязычными требованиями
 artifacts:
