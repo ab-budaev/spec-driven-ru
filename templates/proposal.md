@@ -1,34 +1,50 @@
 # Proposal
 
-## Why
+## Мотивация
 
-<!-- Explain the motivation for this change. What problem does this solve? Why now? -->
+<!-- Зачем это изменение. Какую проблему решает, почему именно сейчас. Опиши существующую проблему и мотивацию для её решения. -->
 
-## What Changes
+## Пользовательские сценарии
 
-<!-- Describe what will change. Be specific about new capabilities, modifications, or removals. -->
+Я как <!-- роль: пользователь / разработчик / аналитик -->:
 
-## Capabilities
+- <!-- хочу ..., чтобы ... -->
 
-### New Capabilities
-<!-- Capabilities being introduced. Name each capability for a cohesive system
-     behavior that can own related requirements as the system evolves. Do not name
-     implementation tasks or proposal sections. Avoid broad catch-all names. Use
-     kebab-case for path segments you introduce (e.g., user-auth or identity/user-auth)
-     that follow the project's existing spec organization. Each creates
-     specs/<capability-path>/spec.md. -->
-- `<capability-path>`: <brief description of what this capability covers>
+<!-- Опиши юзер-стори (что хочет получить тот, кто использует систему). Поведенческие GIVEN/WHEN/THEN сценарии сюда не пиши — им место в spec.md. -->
 
-### Modified Capabilities
-<!-- Existing capabilities whose REQUIREMENTS are changing (not just implementation).
-     Only list here if spec-level behavior changes. Each needs a delta spec file.
-     Use the exact existing path under openspec/specs/. Leave empty if no requirement
-     changes. A change with no capabilities at all (pure refactor, tooling, docs)
-     must set `skip_specs: true` in its .openspec.yaml - openspec validate rejects
-     a zero-delta change without that marker. Do not invent a requirement just to
-     satisfy validation. -->
-- `<existing-capability-path>`: <what requirement is changing>
+## Что меняется
 
-## Impact
+<!-- Что конкретно меняется: какие функциональности и (или) сценарии добавляются, изменяются или удаляются. Будь конкретен. -->
 
-<!-- Affected code, APIs, dependencies, systems -->
+Добавлено:
+
+- ...
+
+Изменено:
+
+- ...
+
+Удалено:
+
+- ...
+
+Явно отложено за пределы этого изменения:
+
+- ...
+
+## Возможности
+
+<!-- Именуй одну capability на связанное системное поведение (kebab-case). Каждая создаёт specs/<capability-path>/spec.md. Секции ниже обязательны для валидатора. -->
+
+### Новые возможности
+
+- `<capability-path>`: <кратко, что покрывает capability>
+
+### Изменённые возможности
+
+<!-- Существующие capability, чьи ТРЕБОВАНИЯ меняются (не просто реализация). Укажи точный путь под openspec/specs/. Пусто, если требований не меняется. Если изменение вообще не трогает capabilities (рефакторинг, тулинг, доки) — задай skip_specs: true в .openspec.yaml, иначе validate отвергнет нулевой дельту. Не выдумывай требование ради валидации. -->
+- `<existing-capability-path>`: <какое требование меняется>
+
+## Влияние
+
+<!-- Затронутые код, API, зависимости, системы -->
